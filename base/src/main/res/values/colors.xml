@@ -3,4 +3,14 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="black">#000000</color>
+    <color name="default_click">#22000000</color>
+    <color name="white">#ffffff</color>
+    <color name="f1f1f1">#f1f1f1</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_dedede">#dedede</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_999">#333333</color>
 </resources>
