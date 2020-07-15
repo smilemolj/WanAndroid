@@ -9,15 +9,7 @@ import java.net.SocketTimeoutException
 import javax.net.ssl.SSLHandshakeException
 
 /**
- * <pre>
- * author  : cassie
- * email   : 834221339@qq.com
- * time    : 2018/08/28.
- * desc    : 异常处理类
- * version : 1.0
- *
  * 用法： ExceptionHandle.handleException(e).message直接把抛出的异常传过来 然后.message获取到错误类型（String)
-</pre> *
  */
 object ExceptionHandle {
     private const val UNAUTHORIZED = 401

@@ -1,9 +1,9 @@
-package com.yuefeng.base.base
+package com.yuefeng.base.base.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-open class BaseViewModel : ViewModel() {
+open class BaseVM : ViewModel() {
     //    网络异常处理
     protected val error_msg by lazy { MutableLiveData<String>() }
     fun getErrormsg(): MutableLiveData<String> {
