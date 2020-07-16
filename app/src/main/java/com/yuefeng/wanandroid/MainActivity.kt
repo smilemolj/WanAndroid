@@ -1,6 +1,7 @@
 package com.yuefeng.wanandroid
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.yuefeng.base.base.view.BaseVMActivity
 import com.yuefeng.base.base.viewmodel.BaseVM
@@ -13,6 +14,7 @@ class MainActivity : BaseVMActivity<BaseVM>(BaseVM::class.java) {
     private val searchFragment by lazy { SearchFragment.newInstance("search", "搜索") }
     private val projectFragment by lazy { ProjectFragment.newInstance("project", "项目分类") }
     private val meFragment by lazy { MeFragment.newInstance("me", "我的") }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,18 +26,23 @@ class MainActivity : BaseVMActivity<BaseVM>(BaseVM::class.java) {
             setOnNavigationItemSelectedListener {
                 when (it.itemId) {
                     R.id.home -> {
+                        title_title.text = "首页"
                         switchFragment(homeFragment)
                     }
                     R.id.blog -> {
+                        title_title.text = "公众号"
                         switchFragment(publicFragment)
                     }
                     R.id.search -> {
+                        title_title.text = "搜索"
                         switchFragment(searchFragment)
                     }
                     R.id.project -> {
+                        title_title.text = "项目分类"
                         switchFragment(projectFragment)
                     }
                     R.id.profile -> {
+                        title_title.text = "我"
                         switchFragment(meFragment)
                     }
                 }
